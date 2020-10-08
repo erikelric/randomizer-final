@@ -11,7 +11,7 @@ canvas {
 }
 
 .randomizerButton {
-
+  margin: 50px;
   padding: 20px;
   background-color: #f7a240;
 }
@@ -19,6 +19,8 @@ canvas {
 .row {
   display: flex;
 }
+
+
 
 .center {
   text-align: center;
@@ -46,6 +48,6 @@ canvas {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding: 2px;
-    max-width: 795px;
+    padding: 5px;
+    max-width: 700px;
   }

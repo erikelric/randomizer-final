@@ -1,18 +1,18 @@
 // types of jackets I like
 let jacket = [{
-  name: "CONFIDENT"
+  name: "TIME TRAVEL"
 }, {
-  name: "INDEPENDENT"
+  name: "TELEPORTATION"
 }, {
-  name: "KIND"
+  name: "IMMORTALITY"
 }, {
-  name: "PATIENT"
+  name: "SUPER SPEED"
 }, {
-  name: "WISE"
+  name: "FIND PARKING"
 }, {
-  name: "FRIENDLY"
+  name: "INVISIBILITY"
 }, {
-  name: "GENEROUS"
+  name: "TELEPATHY"
 }];
 
 let randomIndex;
@@ -41,7 +41,7 @@ function setup() {
   frameRate (8);
 
 
-  text("Word Box",width/ 3, height/2);
+  text("Word Box",width/ 2.5, height / 2);
 
   // button = createButton("Click to randomize");
   button = select('#randButton')
@@ -76,12 +76,12 @@ function randomizer() {
     clear();
     randomIndex = int(random(jacket.length));
     image(random(shapes), width / 2, height / 2);
-    text(`${jacket[randomIndex].name}`, width / 3, height / 2);
+    text(`${jacket[randomIndex].name}`, width / 3.5, height / 2);
     // text(jacket[randomIndex].name + "'s favorite color is" + jacket[randomIndex].color, 50, 50);
     jacket.splice(randomIndex, 1);
   } else {
     background(random(200, 255));
-    text("nothing left", 50, 50);
+    text("nothing left : (", 50, 50);
   }
 
 }
